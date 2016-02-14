@@ -2,7 +2,8 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background: url(img/background-pres.jpg) no-repeat center center fixed;
+    background-color: #6c7A89;
+    background: url(../img/background-pres.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
