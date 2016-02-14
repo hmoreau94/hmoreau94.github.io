@@ -1,6 +1,6 @@
 body{
     font-family: 'Open Sans', sans-serif;
-    background: #f2efe0;
+    background: white;
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
@@ -37,20 +37,6 @@ hr {
     padding: 0;
 }
 
-a{
-    color:#e74c3c;
-}
-
-a:hover{
-    color:#e74c3c;
-    text-decoration: underline;
-}
-
-a:active{
-    color: white;
-    text-decoration: underline;
-}
-
 #title{
     color:#e74c3c;
     font-size: 23pt;
@@ -59,17 +45,20 @@ a:active{
     margin-top: 40pt; 
 }
 
-#subtitle{
+#subtitle-up{
     color:#bdc3c7;
-    font-size: 12pt;
+    font-size: 11pt;
     font-weight: 300;
     text-align: center;
 }
 
-.links{
-    color: #e74c3c;
+#subtitle-down{
+    color:#bdc3c7;
     font-size: 11pt;
     font-weight: 300;
+    text-align: left;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
