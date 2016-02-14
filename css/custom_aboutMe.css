@@ -1,0 +1,60 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+}
+
+
+h1{
+    color:#e74c3c;
+    font-size: 15pt;
+    font-weight: 300; /*Light*/
+    margin-top: 40pt; 
+}
+
+h2{
+    color: black;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+p{
+    color: #bdc3c7;
+    font-size: 11pt;
+    font-weight: 300; 
+}
+
+/*The line under the title*/
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+}
+
+#title{
+    color:#e74c3c;
+    font-size: 23pt;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 40pt; 
+}
+
+#subtitle{
+    color:#bdc3c7;
+    font-size: 15pt;
+    font-weight: 300;
+    text-align: center;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vcenter {
+  vertical-align: middle;
+}
