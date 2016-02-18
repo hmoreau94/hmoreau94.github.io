@@ -1,32 +1,433 @@
 <!DOCTYPE html>
-
 <html>
+    <head>
+        <title>Hugo Moreau - Interactive Resume</title>
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="css/custom.css" />
+        <!--Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,400,700,300italic' rel='stylesheet' type='text/css'>
+    </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <body data-spy="scroll" data-target=".navbar">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+             <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <a href="#presentation" class="navbar-brand">Hugo's Interactive Resume</a>
+                </div><!--/.navbar-header-->
+               
+                
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#abilities">Abilities</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div><!--/.navbar-collapse-->
+                
+            </div><!--/.container-fluid-->  
+        </nav><!--/.navbar-->
 
-    <!-- To link the css and our custom css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom_presentationPage.css">
-    
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,400,700,300italic' rel='stylesheet' type='text/css'>
+        <!------------------------------------------------------------------->
+        <!------------------Beginning of the different views----------------->
+        <!------------------------------------------------------------------->
+        <div id="presentation" class="page-section">
+            <div class="container">
+                <div id = "centered-title">
+                    <div id = title-up>
+                        Hugo Moreau   
+                    </div>
+                    <div id = title-down>Interactive Resume</div>
+                </div>
+            </div><!--/.container-->
+        </div><!--/#presentation-->
 
-    <!-- To link to jquery -->
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <!-- To link the bootstrap javascript -->
-    <script src="js/bootstrap.min.js"></script>
+        <div id="about-me" class="page-section">
+            <div class="container">
 
-    <title>Hugo Moreau - Interactive Resume</title>
-</head>
+            <div id ="title">About Me</div>   
+            <div id ="subtitle">I'm a Communication Systems Student</div>
+            <hr/>
+            <div class = "container-fluid">
+                <div class = "col-sm-5 text center">
+                    <h1>
+                        Who Am I :
+                    </h1>
+                    <div class = "container-fluid">
+                        <p>I’m a student at EPFL. I’m currently finishing a bachelor in Communications Systems. I love network security, Digital Communications and Programming. I’m an optimization maniac, and love spending time discovering new ways of expressing myself, either through Photography, Graphical design or Devellopment. After multiple summer jobs I realised that my passion was to take a project and ensure it’s delivery with the customers constraints.</p>
 
-<body>
-    <div id = "centered-title">
-        <h1>Hugo Moreau</h1>    
-        <hr/>
-        <h2>Interactive Resume</h2>
-    </div>
-    <div><a href="about-me.html">next Page</a></div>
-    
-</body>
+                        <p>Considered as a gadget lover, sometimes a hipster, or even a geek. I woudl describe myself as a tech-aware engineer.</p>
+                    </div><!--End of container-fluid for the text-->
+                </div><!-- Left Section -->
 
+                <div class = "col-sm-2">
+
+                    <img  class="img-responsive" src="images/rounded-pic.png" alt="Profile Picture" style="max-height:170px;">
+
+                </div><!-- Center Section-->
+
+                <div class = "col-sm-5">
+                    <h1>
+                        Quick Details :
+                    </h1>
+                    <div class = "container-fluid">
+                        <h2>Name : </h2>
+                        <p>Hugo (Edouard Marie) Moreau</p>
+                        <h2>Age:</h2>
+                        <p>Born on the 10th of May, 1994 (21 y.o.).</p>
+                        <h2>Location : </h2>
+                        <p>Currently Studying in Lausanne, Switzerland.
+                        <p>Originaly from Paris, France.</p>
+                    </div><!--End of the fluid container-->  
+                </div><!-- Right Division--> 
+            </div><!--End of the fluid container-->   
+        
+            </div><!--/.container-->
+        </div><!--/#about-me-->
+
+        <div id="education" class="page-section">
+            <div class="container">
+                <div id ="title">
+                    Education and Work Experiences
+                </div><!--/#title-->
+                <div id ="subtitle">
+                    <p>“The only person who is educated is the one who has learned how to learn and change” - C.Rogers
+                    </p>
+                </div><!--/#subtitle-->
+
+                <!------------------------------> 
+                <!----------ESTABLISHMENTS------>
+                <!------------------------------> 
+                <div class = "container-fluid">
+                    <h1>
+                        Establishments
+                    </h1>
+
+                    <!--One School-->
+                    <div class = "col-sm-4 text center">
+                        <h2>
+                            Ecole Polytechnique Fédérale de Lausanne
+                        </h2>
+                        <p>
+                            Sept 2013 - Jul 2016
+                        </p>
+                    </div><!-- Left Section -->
+                    
+                    <div class = "col-sm-6 col-sm-offset-2" >
+                        <h2>
+                            Bachelor - Communication Systems
+                        </h2>
+                        <p>
+                            This degree is at the crossroads of computing, telecommunications and mathematics and is obtained after 3 years. After a quick recap of necessary maths/physics background  Followed multiple courses focused on telecomunications and Networks which detail can be found on the website.
+                        </p>
+                        <div class="links col-sm-5 text center">
+                        Lausanne, Switzerland 
+                        </div>
+                        <div class="links col-sm-7 text center">
+                        <a href="http://ic.epfl.ch/communication-systems">Communication Systems @EPFL</a>
+                        </div>
+                    </div><!--Right Section-->
+
+                     <!--One School-->
+                    <div class = "col-sm-4 text center">
+                        <h2>
+                           CPGE - Louis Pasteur
+                        </h2>
+                        <p>
+                            Sept 2012 - Jul 2013
+                        </p>
+                    </div><!-- Left Section -->
+                    <div class = "col-sm-2" ></div> <!--Didn't knwo how to get a gap-->
+                    <div class = "col-sm-6" >
+                        <h2>
+                            Prep. School in Maths, Physics and Chemistery
+                        </h2>
+                        <p>
+                            This year of study aimed to prepare students to Engineering school by teaching us some advanced mathematics, physics and chemistery. This year was aimed to be at a very high pace to ensure the transition between High-School and College studies.
+                        </p>
+                        <div class="links col-sm-5 text center">
+                        Neuilly-Sur-Seine, France 
+                        </div>
+                        <div class="links col-sm-7 text center">
+                        <a href="http://www.lyc-pasteur-neuilly.ac-versailles.fr">School Webiste</a>
+                        </div>    
+                    </div><!--Right Section-->
+</div><!-- the end of the container-fluid-->
+
+                <!------------------------------> 
+                <!----------SUMMER JOBS--------->
+                <!------------------------------> 
+                <div class="container-fluid">
+                    <h1>
+                        Summer Jobs
+                    </h1>
+                    <!--One School-->
+                    <div class = "col-sm-4 text center">
+                        <h2>
+                            Gamblin Déménagement - Moving Company
+                        </h2>
+                        <p>
+                            Jul 2013 - Aug 2013
+                        </p>
+                    </div><!-- Left Section -->
+                    <div class = "col-sm-2" ></div> <!--Didn't knwo how to get a gap-->
+                    <div class = "col-sm-6" >
+                        <h2>
+                            Project Leader
+                        </h2>
+                        <p>
+                            From personnal house moving to Luxury companies events moving, my role was first to help in the physical tasks and from the second half of the Job duration I was assigned to project management in archive management and furniture delivering with a team of 3 people excluding myself.
+                        </p>
+                        <div class="links col-sm-5 text center">
+                        Nanterre, France
+                        </div>
+                        <div class="links col-sm-7 text center">
+                        <a href="http://www.gamblin.fr">Company Website</a>
+                        </div>
+                    </div><!--Right Section-->
+
+                    <!--One School-->
+                    <div class = "col-sm-4 text center">
+                        <h2>
+                          Restaurant - “Le Petit Poucet”
+                        </h2>
+                        <p>
+                            Jul 2012 - Aug 2012
+                        </p>
+                    </div><!-- Left Section -->
+                    <div class = "col-sm-2" ></div> <!--Didn't knwo how to get a gap-->
+                    <div class = "col-sm-6" >
+                        <h2>
+                            Waiter ("Serveur au Passe")
+                        </h2>
+                        <p>
+                            Waiter in a classy restaurant during summer to learn the proper ways of delivering this type of services to customers and try to grasp the meaning of hard physical labor.
+                        </p>
+                        <div class="links col-sm-5 text center">
+                        Levallois-Perret, France
+                        </div>
+                        <div class="links col-sm-7 text center">
+                        <a href="http://www.le-petit-poucet.com">Restaurant Website</a>
+                        </div>
+                    </div><!--Right Section-->
+                </div><!-- the end of the container-fluid-->
+
+
+                <!------------------------------> 
+                <!--INTERNSHIP AND SCHOOL JOBS-->
+                <!------------------------------> 
+                <div class = "container-fluid">
+                    <h1>
+                        Internship and School Jobs
+                    </h1>
+                    <!--One School-->
+                    <div class = "col-sm-4 text center">
+                        <h2>
+                            Tutoring in Digital Design
+                        </h2>
+                        <p>
+                            Sept 2014 - Jul 2014
+                        </p>
+                    </div><!-- Left Section -->
+                    <div class = "col-sm-2" ></div> <!--Didn't knwo how to get a gap-->
+                    <div class = "col-sm-6" >
+                        <h2>
+                            Teaching Assistant
+                        </h2>
+                        <p>
+                            Under the teaching of the professor Eduardo Sanchez, a team of 5 assitants was put together to help the 1st Year Student in Computer Science and Communication System with the assignement in VHDL and Boolean logic every week. 
+                        </p>
+                        <div class="links col-sm-5 text center">
+                        Lausanne, Switzerland
+                        </div>
+                        <div class="links col-sm-7 text center">
+                        <a href="http://people.epfl.ch/eduardo.sanchez?lang=en">Eduardo Sanchez @EPFL</a>
+                        </div>
+                    </div><!--Right Section-->
+
+                    <!--One School-->
+                    <div class = "col-sm-4 text center">
+                        <h2>
+                            Skeen - Men's Skincare
+                        </h2>
+                        <p>
+                            May 2012 - Jul 2012
+                        </p>
+                    </div><!-- Left Section -->
+                    <div class = "col-sm-2" ></div> <!--Didn't knwo how to get a gap-->
+                    <div class = "col-sm-6" >
+                        <h2>
+                            Internship - Responsible to conduct a notoriety study
+                        </h2>
+                        <p>
+                            Under the instructions of Mr. Pedro Garcia (CEO of the company), I was responsible to create from scratch a notoriety study and a real time analysis system based on google office suite tools. And finaly had to conduct the study on randomize samples of people in the street to present the results to the executive staff. You can find below a link to the letter of recommandation from  Mr. Garcia. 
+                        </p>
+                        <div class="links col-sm-5 text center">
+                        Paris, France
+                        </div>
+                        <div class="links col-sm-7 text center">
+                        <a href="img/LettreRecommandationSkeen.pdf" download ="Recomandation_Skeen_HM">Download Letter (pdf)</a>
+                        <p><a href="mailto:pedrogarcia@skeen.fr">Contact Pedro Garcia</a></p>
+                        </div>
+                    </div><!--Right Section-->
+</div><!--/.container-fluid-->
+            </div><!--/#container-->
+        </div><!--/#education-->
+
+        <div id="abilities" class="page-section">
+            <div class="container">
+                <div id ="title">
+                    Abilities
+                </div>   
+                <div id ="subtitle-up">
+                    a·bil·i·ty: n. pl.
+                </div>
+                    <div id ="subtitle-down">
+            - The quality of being able to do something, especially the physical, mental, financial, or legal power to accomplish something.<br/>
+            - A skill, talent, or capacity: a student of many abilities.
+                    </div>
+                <hr/> 
+
+                <!------------------------------> 
+                <!----------Languages----------->
+                <!------------------------------> 
+                <div class="container">
+                <h1>
+                    Languages
+                </h1>
+                    <p>
+                    French "Insert Progress Bars" (Mother Tongue)<br/>
+                    English "Insert Progress Bars" (Full English Proficiency<br/>
+                    Spanish (Castillian) "Insert Progress Bars" (Limited Professional Proiciency)
+                    </p>
+                </div><!--/.container-->
+                <hr/>
+
+                <!------------------------------> 
+                <!----------Skills-------------->
+                <!------------------------------>
+                <div class="container">
+                <h1>
+                    Skills
+                </h1>
+                    <div class = "col-sm-6 text center">
+                        <p>
+                            Group Organisation and Human Interaction<br/>
+                            Big Autonomy and Adaptability<br/>
+                            High Awareness of technological Innovations<br/>
+                            Smart Design Sensibility</p>
+                    </div><!--/.col-sm-6--> 
+
+                     <div class = "col-sm-6 text center">
+                        <p>
+                            Strong schedule management<br/>
+                            Versatility of interests and fields of knowledge<br/>
+                            Problem Solving
+                         </p>
+                    </div><!--/.col-sm-6--> 
+                </div><!--!./container-->    
+                <hr/>
+
+                <!------------------------------> 
+                <!-----------Tools-------------->
+                <!------------------------------>
+                <div class="container">
+                <h1>
+                    Tools and Programming Languages
+                </h1>
+                
+                    <div class = "col-sm-6 text center">
+                        <p>
+                            Mac OSX         <br/>
+                            LateX           <br/>
+                            Eclipse         <br/>
+                            Subblime Text 2 <br/>
+                            Java 6/7        <br/>
+                            C               <br/>
+                            HTML(5)         
+                        </p>
+                    </div> 
+                    <div class = "col-sm-6 text center">
+                        <p>
+                            MS Office           <br/>
+                            Python              <br/>
+                            UML                 <br/>
+                            Photoshop CS6       <br/>
+                            Illustrator CC      <br/>
+                            XCode               <br/>
+                            Github       
+                        </p>
+                    </div> 
+                </div><!--!./container-->    
+            </div><!--/.container-->
+        </div><!--/#abilities-->
+
+        <div id="projects" class="page-section">
+            <div class="container">
+               <div id ="title">Points of Interests and Projects</div>  
+                <div id ="subtitle">
+                 A person shouldn’t be defined exclusively by his/her set of skills but also by what importance it grants to personnal matters. So here are some of the things I love.
+                </div>
+                <hr/> 
+
+                <!------------------------------> 
+                <!---Beginning of Pictures------>
+                <!------------------------------> 
+                <div class="container" style="margin-bottom:50px">
+                    <div class="col-sm-6">
+                        <div id="thumbnails-container" >
+                            <img id ="thumbnails" src="images/IMG_0004.JPG" alt="Picture of my Bicycle in front of the Louvre">
+                        </div><!--/thumbnails-container-->
+                    </div><!--./col-sm-6-->
+
+                    <div class="col-sm-6">
+                        <div id="thumbnails-container" class="column-sm-6">
+                            <img id = "thumbnails" src="images/IMG_0261.jpg" alt="Picture of the Petronas towers in Kuala-Lumpur" >
+                        </div><!--/#thumbnails-container-->
+                    </div><!--./col-sm-6-->
+
+                    <div class="col-sm-6">
+                        <div id="thumbnails-container" class="column-sm-6">
+                            <img id = "thumbnails" src="images/IMG_1494.jpg" alt="Picture of sunset taken from a plane." >
+                        </div><!--/#thumbnails-container-->
+                    </div><!--./col-sm-6-->
+
+                    <div class="col-sm-6">
+                        <div id="thumbnails-container" class="column-sm-6">
+                            <img id = "thumbnails" src="images/final.png" alt="Thumbnail of a poster made for a graphical design course." >
+                        </div><!--/#thumbnails-container-->
+                    </div><!--/.col-sm-6-->  
+                </div><!--/.container-->  
+            </div><!--/.container-->
+        </div><!--/#projects-->
+
+        <div id="contact" class="page-section">
+            <div class="container">
+                <div id ="title">Contact Me</div><!--/#title-->
+                <div id ="subtitle">
+                 Now that you learned a bit more about me, it's time to contact me.
+                </div><!--/#subtitle-->
+                <hr/> 
+            </div><!--/.container-->    
+        </div><!--/#contact-->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- Scrolling Nav JavaScript -->
+        <script src="js/custom.js"  type="text/javascript"></script>
+    </body>
 </html>
