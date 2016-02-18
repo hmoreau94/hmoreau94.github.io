@@ -137,10 +137,15 @@ a:active{
 }
 
 .page-section {
-	width: 100%;
-	min-height: 800px;
-	padding: 50px 0;
+    min-height: 600px;
+    font-family: 'Open Sans', sans-serif;
     background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20pt;
+    padding-right:20pt;
+    padding-bottom: 10pt;
+    padding-top: 10pt;
 }
 
 /*TYPE OF PAGE SECTIONS*/
@@ -173,16 +178,8 @@ a:active{
 }
 
 .page-section#about-me{
-	min-height: 600px;
-    font-family: 'Open Sans', sans-serif;
+
     background-color: white;
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5pt;
-    margin-bottom: 40pt;
-    padding-left: 20pt;
-    padding-right:20pt;
 }
 .page-section#about-me #center-wrapper{
   position: relative;
@@ -191,12 +188,7 @@ a:active{
 }
 
 .page-section#education{
-    font-family: 'Open Sans', sans-serif;
     background: #f2efe0;
-    margin-top: 40pt;
-    margin-bottom: 40pt;
-    padding-left: 20pt;
-    padding-right:20pt;
 }
 .page-section#education .links{
     color: #e74c3c;
@@ -205,13 +197,7 @@ a:active{
 }
 
 .page-section#abilities{
-    min-height: 600px;
-    font-family: 'Open Sans', sans-serif;
     background: white;
-    margin-top: 40pt;
-    margin-bottom: 40pt;
-    padding-left: 20pt;
-    padding-right:20pt;
 }
 .page-section#abilities #subtitle-up{
     color:#bdc3c7;
