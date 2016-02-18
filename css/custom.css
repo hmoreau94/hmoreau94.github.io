@@ -147,7 +147,7 @@ a:active{
 .page-section#presentation {
 	min-height: 700px;
     background-color: #6c7A89;
-    background: url(../images/background-pres.jpg) no-repeat center center fixed;
+    background: url(../images/background-pres.jpg) no-repeat center center;
     background-size: cover;
 }
 .page-section#presentation #centered-title{
