@@ -1,0 +1,303 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans';
+}
+.header {
+	position: fixed;
+	width: 100%;
+	background: #FFFFFF;
+	z-index: 10;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: rgb(85,85,85);
+    border-color: black;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #e74c3c;/* Red */
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    background-color: rgb(85,85,85);
+    font-weight: 300;
+    font-size: 13px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #e74c3c;/* Red */
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #e74c3c;/* Red */
+    background-color: rgb(85,85,85);
+
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #e74c3c;/* Red */
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: lightgrey;
+    background-color: rgb(34,34,34);
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: rgb(85,85,85); /*Grey*/
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+
+/*General Settings*/
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1e;
+    padding: 3;
+}
+h1{
+    color:#e74c3c;
+    font-size: 15pt;
+    font-weight: 300; /*Light*/
+    margin-top: 40pt; 
+}
+h2{
+    color: black;
+    font-size: 11pt;
+    font-weight: 600;
+}
+p{
+    color: #bdc3c7;
+    font-size: 11pt;
+    font-weight: 300; 
+}
+a{
+    color:#e74c3c;
+}
+a:hover{
+    color:#e74c3c;
+    text-decoration: underline;
+}
+a:active{
+    color: white;
+    text-decoration: underline;
+}
+#title{
+    color:#e74c3c;
+    font-size: 23pt;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5pt; 
+}
+#subtitle{
+    color:#bdc3c7;/* Light Gray */
+    font-size: 15pt;
+    font-weight: 300;
+    text-align: center;
+}
+
+.page-section {
+	width: 100%;
+	min-height: 800px;
+	padding: 50px 0;
+    background-color: white;
+}
+
+/*TYPE OF PAGE SECTIONS*/
+.page-section#presentation {
+	min-height: 700px;
+    background-color: #6c7A89;
+    background: url(../images/background-pres.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.page-section#presentation #centered-title{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.76;
+}
+.page-section#presentation #title-up{
+    color:#ffffff;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+.page-section#presentation #title-down{
+    color:#ffffff;
+    font-size: 25px;
+    font-weight: 200;
+    /*I don't understand how to handle the opacity*/
+    text-align: center;
+}
+
+.page-section#about-me{
+	min-height: 600px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5pt;
+    margin-bottom: 40pt;
+    padding-left: 20pt;
+    padding-right:20pt;
+}
+.page-section#about-me #center-wrapper{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.page-section#education{
+    font-family: 'Open Sans', sans-serif;
+    background: #f2efe0;
+    margin-top: 40pt;
+    margin-bottom: 40pt;
+    padding-left: 20pt;
+    padding-right:20pt;
+}
+.page-section#education .links{
+    color: #e74c3c;
+    font-size: 11pt;
+    font-weight: 300;
+}
+
+.page-section#abilities{
+    min-height: 600px;
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+    margin-top: 40pt;
+    margin-bottom: 40pt;
+    padding-left: 20pt;
+    padding-right:20pt;
+}
+.page-section#abilities #subtitle-up{
+    color:#bdc3c7;
+    font-size: 11pt;
+    font-weight: 300;
+    text-align: center;
+}
+.page-section#abilities #subtitle-down{
+    color:#bdc3c7;
+    font-size: 11pt;
+    font-weight: 300;
+    text-align: left;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-section#projects{
+    background: #f2efe0;
+}
+.page-section#projects #thumbnails-container{
+    overflow:hidden;
+    width: 300pt;
+    height:200pt;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 5pt;
+    margin-bottom:10pt;
+}
+.page-section#projects #thumbnails{
+    height:300pt;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.page-section#contact{
+    background: #6c7A89;
+}
+
+
+
+.btn {
+	font-weight: 200;
+}
+.btn-dark {
+	background: #444;
+	color: #fff;
+}
+.btn-dark:hover {
+	background: #000;
+	color: #fff;
+}
+.back-to-top {
+	display: inline-block;
+	clear: both;
+	background: #fff;
+	color: #333;
+	padding: 0 10px 5px;
+	margin: 20px 0 0;
+	text-shadow: none;
+}
+.back-to-top:hover {
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	.header .navbar-brand {
+		padding-left: 0;
+	}
+	.navbar-nav {
+		float: left;
+	}
+}
+@media (max-width: 480px) {
+	.page-section h1 {
+		font-size: 3em;
+	}
+	.page-section h2 {
+		font-size: 2em;
+	}
+	.page-section p {
+		font-size: 1em;
+		margin: 0 0 20px;
+	}
+}
