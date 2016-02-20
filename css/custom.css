@@ -456,9 +456,10 @@ ul.no-bullets > li{
         text-align: center;
     }
     
+    /*Change the background resolution*/
     .page-section#presentation {
 
-    background-image: url(../images/background-pres-small.jpg);
+        background-image: url(../images/background-pres-small.jpg);
 }
     
     .page-section#education h1{
@@ -473,6 +474,31 @@ ul.no-bullets > li{
     
     .page-section#abilities ul.with-effects > li .comments{
         display: none;
+    }
+    
+    /*Unable the effects*/
+    .page-section#projects figure.effect:hover p{
+        display:none;
+    }
+    .page-section#projects figure.effect:hover img{
+        display:none;
+    }
+    .page-section#projects figure.effect:hover h3 {
+	   display:none;
+    }
+    .page-section#projects figure.effect:hover .btn{
+        display:none;
+    }
+    .page-section#projects figure.effect h3 {
+	   opacity: 1;
+    }
+    .page-section#projects figure.effect img {
+	   opacity: 0.2;
+	   -webkit-transform: translate3d(0,0,0);
+	   transform: translate3d(0,0,0);
+    }
+    .page-section#projects figure.effect .btn{
+        display: block;
     }
     
     /*We delete the hover effect on mobile*/
