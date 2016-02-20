@@ -174,7 +174,6 @@ ul.no-bullets > li{
     background-image: url(../images/background-pres-small.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;/* Parallax Scrolling Effect */
     background-color: #e74c3c;
     height: 100%;
     margin:50px 0px 20px 0px; 
@@ -429,6 +428,7 @@ ul.no-bullets > li{
 	}
     .page-section#presentation {
         background-image: url(../images/background-pres.jpg);
+        background-attachment: fixed;/* Parallax Scrolling Effect */
 }
 }
 @media (max-width: 768px) {
@@ -488,8 +488,18 @@ ul.no-bullets > li{
     .page-section#projects figure.effect:hover .btn{
         display:none;
     }
+    .page-section#projects figure.effect h3::after {
+	   display: none;
+    }
     .page-section#projects figure.effect h3 {
 	   opacity: 1;
+        position: absolute;
+	   bottom: 0;
+	   left: 0;
+	   width: 100%;
+	   height: 2px;
+	   background: #fff;
+	   content: '';
     }
     .page-section#projects figure.effect img {
 	   opacity: 0.2;
