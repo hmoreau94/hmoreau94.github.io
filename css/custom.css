@@ -86,15 +86,7 @@ html, body, h1, h2, h3, p, a, ul {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #CCC;
 }
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
-    }
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333;
-    }
-}
+
 
 /*General Settings*/
 hr { 
@@ -464,6 +456,11 @@ ul.no-bullets > li{
         text-align: center;
     }
     
+    .page-section#presentation {
+
+    background-image: url(../images/background-pres-small.jpg);
+}
+    
     .page-section#education h1{
         text-align: left;
     }
@@ -481,6 +478,14 @@ ul.no-bullets > li{
     /*We delete the hover effect on mobile*/
     .page-section#projects figure.effect p {
         display: none;
+    }
+    
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
     }
    
 }
