@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="content-style-type" content="text/css" />
+		<meta http-equiv="content-language" content="en" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--To indicate to the browser that the page will adapt to any screensize-->
+        
+        <meta name="author" content="Hugo Moreau" />
+        
         <title>Hugo Moreau - Interactive Resume</title>
         <!--try-->
         <!--Bootstrap CSS-->
@@ -11,7 +19,11 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,400,700,300italic' rel='stylesheet' type='text/css'>
     </head>
 
+    	 
+    
     <body data-spy="scroll" data-target=".navbar">
+        
+
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
              <div class="container-fluid">
                 <div class="navbar-header">
@@ -45,51 +57,49 @@
         <!------------------------------------------------------------------->
         <!------------------Beginning of the different views----------------->
         <!------------------------------------------------------------------->
-        <div id="presentation" class="page-section">
-            <div class="container">
-                <div id = "centered-title">
-                    <div id = title-up>
-                        Hugo Moreau   
-                    </div>
-                    <div id = title-down>Interactive Resume</div>
+        
+        <div class="page-section container-fluid" id="presentation" class="page-section">
+            <div id = "centered-title">
+                <div id = title-up>
+                Hugo Moreau 
+                <hr/>
                 </div>
-            </div><!--/.container-->
+                <div id = title-down>Interactive Resume</div>
+            </div>
         </div><!--/#presentation-->
 
-        <div id="about-me" class="page-section">
+        <div id="about-me" class="page-section container-fluid">
             <div class="container">
 
             <div id ="title">About Me</div>   
             <div id ="subtitle">I'm a Communication Systems Student</div>
             <hr/>
-            <div class = "container-fluid">
-                <div class = "col-sm-5 text center">
+            <div class = "row">
+                <div class = "col-md-4 text center">
                     <h1>
                         Who Am I :
                     </h1>
-                    <div class = "container-fluid">
-                        <p>I’m a student at EPFL. I’m currently finishing a bachelor in Communications Systems. I love network security, Digital Communications and Programming. I’m an optimization maniac, and love spending time discovering new ways of expressing myself, either through Photography, Graphical design or Devellopment. After multiple summer jobs I realised that my passion was to take a project and ensure it’s delivery with the customers constraints.</p>
-
-                        <p>Considered as a gadget lover, sometimes a hipster, or even a geek. I woudl describe myself as a tech-aware engineer.</p>
-                    </div><!--End of container-fluid for the text-->
+                    <p>I’m a student at EPFL. I’m currently finishing a bachelor in Communications Systems. I love network security, Digital Communications and Programming. I’m an optimization maniac, and love spending time discovering new ways of expressing myself, either through Photography, Graphical design or Devellopment. After multiple summer jobs I realised that my passion was to take a project and ensure it’s delivery with the customers constraints.
+                    </p>
+                    <p>Considered as a gadget lover, sometimes a hipster, or even a geek. I would describe myself as a tech-aware engineer.
+                    </p>                    
                 </div><!-- Left Section -->
 
-                <div class = "col-sm-2">
-
-                    <img  class="img-responsive" src="images/rounded-pic.png" alt="Profile Picture" style="max-height:170px;">
+                <div class = "col-md-4 text-center">
+                <img src="images/rounded-pic.png" alt="Profile Picture" width="246" height="246">
 
                 </div><!-- Center Section-->
 
-                <div class = "col-sm-5">
+                <div class = "col-md-4">
                     <h1>
                         Quick Details :
                     </h1>
                     <div class = "container-fluid">
-                        <h2>Name : </h2>
+                        <h3>Name : </h3>
                         <p>Hugo (Edouard Marie) Moreau</p>
-                        <h2>Age:</h2>
+                        <h3>Age:</h3>
                         <p>Born on the 10th of May, 1994 (21 y.o.).</p>
-                        <h2>Location : </h2>
+                        <h3>Location : </h3>
                         <p>Currently Studying in Lausanne, Switzerland.
                         <p>Originaly from Paris, France.</p>
                     </div><!--End of the fluid container-->  
@@ -99,26 +109,25 @@
             </div><!--/.container-->
         </div><!--/#about-me-->
 
-        <div id="education" class="page-section">
+        <div id="education" class="page-section container-fluid">
             <div class="container">
                 <div id ="title">
                     Education and Work Experiences
                 </div><!--/#title-->
                 <div id ="subtitle">
-                    <p>“The only person who is educated is the one who has learned how to learn and change” - C.Rogers
-                    </p>
+                    “The only person who is educated is the one who has learned how to learn and change” - C.Rogers
                 </div><!--/#subtitle-->
-
+                <hr/>
                 <!------------------------------> 
                 <!----------ESTABLISHMENTS------>
                 <!------------------------------> 
-                <div class = "container-fluid">
-                    <h1>
-                        Establishments
-                    </h1>
+                <h1>
+                    Establishments
+                </h1>
 
-                    <!--One School-->
-                    <div class = "col-sm-4 text center">
+                <!--One School-->
+                <div class ="row" id="element-wrapper">
+                    <div class = "col-sm-4 no-padding text center">
                         <h2>
                             Ecole Polytechnique Fédérale de Lausanne
                         </h2>
@@ -126,24 +135,28 @@
                             Sept 2013 - Jul 2016
                         </p>
                     </div><!-- Left Section -->
-                    
-                    <div class = "col-sm-6 col-sm-offset-2" >
-                        <h2>
+
+                    <div class = "col-sm-6 no-padding col-sm-offset-2" >
+                        <h3>
                             Bachelor - Communication Systems
-                        </h2>
-                        <p>
+                        </h3>
+                        <div id="descriptions">
                             This degree is at the crossroads of computing, telecommunications and mathematics and is obtained after 3 years. After a quick recap of necessary maths/physics background  Followed multiple courses focused on telecomunications and Networks which detail can be found on the website.
-                        </p>
+                        </div>
                         <div class="links col-sm-5 text center">
-                        Lausanne, Switzerland 
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                            Lausanne, Switzerland 
                         </div>
                         <div class="links col-sm-7 text center">
-                        <a href="http://ic.epfl.ch/communication-systems">Communication Systems @EPFL</a>
+                            <span class="glyphicon glyphicon-link"></span>
+                            <a href="http://ic.epfl.ch/communication-systems">Communication Systems @EPFL</a>
                         </div>
                     </div><!--Right Section-->
+                </div>
 
-                     <!--One School-->
-                    <div class = "col-sm-4 text center">
+                 <!--One School-->
+                <div class ="row" id="element-wrapper">
+                    <div class = "col-sm-4 no-padding  text center">
                         <h2>
                            CPGE - Louis Pasteur
                         </h2>
@@ -151,32 +164,34 @@
                             Sept 2012 - Jul 2013
                         </p>
                     </div><!-- Left Section -->
-                    <div class = "col-sm-2" ></div> <!--Didn't knwo how to get a gap-->
-                    <div class = "col-sm-6" >
-                        <h2>
+
+                    <div class = "col-sm-6 no-padding col-sm-offset-2" >
+                        <h3>
                             Prep. School in Maths, Physics and Chemistery
-                        </h2>
-                        <p>
+                        </h3>
+                        <div id="descriptions">
                             This year of study aimed to prepare students to Engineering school by teaching us some advanced mathematics, physics and chemistery. This year was aimed to be at a very high pace to ensure the transition between High-School and College studies.
-                        </p>
+                        </div>
                         <div class="links col-sm-5 text center">
+                            <span class="glyphicon glyphicon-map-marker"></span>
                         Neuilly-Sur-Seine, France 
                         </div>
                         <div class="links col-sm-7 text center">
-                        <a href="http://www.lyc-pasteur-neuilly.ac-versailles.fr">School Webiste</a>
+                            <span class="glyphicon glyphicon-link"></span>
+                            <a href="http://www.lyc-pasteur-neuilly.ac-versailles.fr">School Webiste</a>
                         </div>    
                     </div><!--Right Section-->
-</div><!-- the end of the container-fluid-->
-
+                </div><!--/#element-wrapper-->
+                <hr/>
                 <!------------------------------> 
                 <!----------SUMMER JOBS--------->
                 <!------------------------------> 
-                <div class="container-fluid">
-                    <h1>
-                        Summer Jobs
-                    </h1>
-                    <!--One School-->
-                    <div class = "col-sm-4 text center">
+                <h1>
+                    Summer Jobs
+                </h1>
+                <!--One School-->
+                <div class ="row" id="element-wrapper">
+                    <div class = "col-sm-4 no-padding text center">
                         <h2>
                             Gamblin Déménagement - Moving Company
                         </h2>
@@ -184,24 +199,27 @@
                             Jul 2013 - Aug 2013
                         </p>
                     </div><!-- Left Section -->
-                    <div class = "col-sm-2" ></div> <!--Didn't knwo how to get a gap-->
-                    <div class = "col-sm-6" >
-                        <h2>
+
+                    <div class = "col-sm-6 no-padding col-sm-offset-2" >
+                        <h3>
                             Project Leader
-                        </h2>
-                        <p>
+                        </h3>
+                        <div id="descriptions">
                             From personnal house moving to Luxury companies events moving, my role was first to help in the physical tasks and from the second half of the Job duration I was assigned to project management in archive management and furniture delivering with a team of 3 people excluding myself.
-                        </p>
+                        </div>
                         <div class="links col-sm-5 text center">
-                        Nanterre, France
+                            <span class="glyphicon glyphicon-map-marker"></span>Nanterre, France
                         </div>
                         <div class="links col-sm-7 text center">
+                            <span class="glyphicon glyphicon-link"></span>
                         <a href="http://www.gamblin.fr">Company Website</a>
                         </div>
                     </div><!--Right Section-->
+                </div><!--/#element-wrapper-->
 
-                    <!--One School-->
-                    <div class = "col-sm-4 text center">
+                <!--One School-->
+                <div class ="row" id="element-wrapper">
+                    <div class = "col-sm-4 no-padding text center">
                         <h2>
                           Restaurant - “Le Petit Poucet”
                         </h2>
@@ -209,33 +227,36 @@
                             Jul 2012 - Aug 2012
                         </p>
                     </div><!-- Left Section -->
-                    <div class = "col-sm-2" ></div> <!--Didn't knwo how to get a gap-->
-                    <div class = "col-sm-6" >
-                        <h2>
+
+                    <div class = "col-sm-6 no-padding col-sm-offset-2" >
+                        <h3>
                             Waiter ("Serveur au Passe")
-                        </h2>
-                        <p>
+                        </h3>
+                        <div id="descriptions">
                             Waiter in a classy restaurant during summer to learn the proper ways of delivering this type of services to customers and try to grasp the meaning of hard physical labor.
-                        </p>
+                        </div>
                         <div class="links col-sm-5 text center">
-                        Levallois-Perret, France
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                            Levallois-Perret, France
                         </div>
                         <div class="links col-sm-7 text center">
-                        <a href="http://www.le-petit-poucet.com">Restaurant Website</a>
+                            <span class="glyphicon glyphicon-link"></span>
+                            <a href="http://www.le-petit-poucet.com">Restaurant Website</a>
                         </div>
                     </div><!--Right Section-->
-                </div><!-- the end of the container-fluid-->
-
-
+                </div><!--/#element-wrapper-->
+                
+                <hr />
+                
                 <!------------------------------> 
                 <!--INTERNSHIP AND SCHOOL JOBS-->
                 <!------------------------------> 
-                <div class = "container-fluid">
-                    <h1>
-                        Internship and School Jobs
-                    </h1>
-                    <!--One School-->
-                    <div class = "col-sm-4 text center">
+                <h1>
+                    Internship and School Jobs
+                </h1>
+                <!--One School-->
+                <div class ="row" id="element-wrapper">
+                    <div class = "col-sm-4 no-padding text center">
                         <h2>
                             Tutoring in Digital Design
                         </h2>
@@ -243,24 +264,28 @@
                             Sept 2014 - Jul 2014
                         </p>
                     </div><!-- Left Section -->
-                    <div class = "col-sm-2" ></div> <!--Didn't knwo how to get a gap-->
-                    <div class = "col-sm-6" >
-                        <h2>
+
+                    <div class = "col-sm-6 no-padding col-sm-offset-2" >
+                        <h3>
                             Teaching Assistant
-                        </h2>
-                        <p>
+                        </h3>
+                        <div id="descriptions">
                             Under the teaching of the professor Eduardo Sanchez, a team of 5 assitants was put together to help the 1st Year Student in Computer Science and Communication System with the assignement in VHDL and Boolean logic every week. 
-                        </p>
+                        </div>
                         <div class="links col-sm-5 text center">
-                        Lausanne, Switzerland
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                            Lausanne, Switzerland
                         </div>
                         <div class="links col-sm-7 text center">
-                        <a href="http://people.epfl.ch/eduardo.sanchez?lang=en">Eduardo Sanchez @EPFL</a>
+                            <span class="glyphicon glyphicon-link"></span>
+                            <a href="http://people.epfl.ch/eduardo.sanchez?lang=en">Eduardo Sanchez @EPFL</a>
                         </div>
                     </div><!--Right Section-->
+                </div><!--/#element-wrapper-->
 
-                    <!--One School-->
-                    <div class = "col-sm-4 text center">
+                <!--One School-->
+                <div class ="row" id="element-wrapper">
+                    <div class = "col-sm-4 no-padding text center">
                         <h2>
                             Skeen - Men's Skincare
                         </h2>
@@ -268,112 +293,288 @@
                             May 2012 - Jul 2012
                         </p>
                     </div><!-- Left Section -->
-                    <div class = "col-sm-2" ></div> <!--Didn't knwo how to get a gap-->
-                    <div class = "col-sm-6" >
-                        <h2>
+
+                    <div class = "col-sm-6 no-padding col-sm-offset-2" >
+                        <h3>
                             Internship - Responsible to conduct a notoriety study
-                        </h2>
-                        <p>
+                        </h3>
+                        <div id="descriptions">
                             Under the instructions of Mr. Pedro Garcia (CEO of the company), I was responsible to create from scratch a notoriety study and a real time analysis system based on google office suite tools. And finaly had to conduct the study on randomize samples of people in the street to present the results to the executive staff. You can find below a link to the letter of recommandation from  Mr. Garcia. 
-                        </p>
+                        </div>
                         <div class="links col-sm-5 text center">
-                        Paris, France
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                            Paris, France
                         </div>
                         <div class="links col-sm-7 text center">
-                        <a href="img/LettreRecommandationSkeen.pdf" download ="Recomandation_Skeen_HM">Download Letter (pdf)</a>
-                        <p><a href="mailto:pedrogarcia@skeen.fr">Contact Pedro Garcia</a></p>
+                            <span class="glyphicon glyphicon-link"></span>
+                            <a href="img/LettreRecommandationSkeen.pdf" download ="Recomandation_Skeen_HM">Download Letter (pdf)</a><br/>
+                            <span class="glyphicon glyphicon-link"></span>
+                            <a href="mailto:pedrogarcia@skeen.fr">Contact Pedro Garcia</a>
                         </div>
                     </div><!--Right Section-->
-</div><!--/.container-fluid-->
+                </div><!--/#element-wrapper-->
             </div><!--/#container-->
         </div><!--/#education-->
 
-        <div id="abilities" class="page-section">
-            <div class="container">
+        <div id="abilities" class="page-section container">
+            <div class ="container">
                 <div id ="title">
                     Abilities
                 </div>   
-                <div id ="subtitle-up">
-                    a·bil·i·ty: n. pl.
-                </div>
-                    <div id ="subtitle-down">
+                <div id ="subtitle">
+                    a·bil·i·ty: n. pl.<br/>
+
             - The quality of being able to do something, especially the physical, mental, financial, or legal power to accomplish something.<br/>
             - A skill, talent, or capacity: a student of many abilities.
-                    </div>
-                <hr/> 
+                </div>
+                <hr> 
 
                 <!------------------------------> 
                 <!----------Languages----------->
                 <!------------------------------> 
-                <div class="container">
-                <h1>
-                    Languages
-                </h1>
-                    <p>
-                    French "Insert Progress Bars" (Mother Tongue)<br/>
-                    English "Insert Progress Bars" (Full English Proficiency<br/>
-                    Spanish (Castillian) "Insert Progress Bars" (Limited Professional Proiciency)
-                    </p>
-                </div><!--/.container-->
-                <hr/>
+                <div class="row" > 
+                    <h1>
+                        Languages
+                    </h1>
+                    <div class = "col-sm-12 text center">
+                        <ul class ="no-bullets with-effects">
+                        <li>
+                            <span class="ability-title">French</span>
+                            <span class="ability-score">
+                                <span class="comments">(Mother Tongue)</span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>		
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">English</span>
+                            <span class="ability-score">
+                                <span class="comments">(Full Professional Proficiency)</span>
+                                
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>		
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star "></span>
+                                <span class="glyphicon glyphicon-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Spanish</span>
+                            <span class="ability-score">
+                                <span class="comments">(Limited Professional Proficiency)</span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star "></span>
+                                <span class="glyphicon glyphicon-star "></span>		
+                                <span class="glyphicon glyphicon-star "></span>
+                                <span class="glyphicon glyphicon-star "></span>
+                                <span class="glyphicon glyphicon-star "></span>
+                            </span>
+                    </ul>
+                    </div>
+                    
+                </div>
+               <hr />
 
                 <!------------------------------> 
                 <!----------Skills-------------->
-                <!------------------------------>
-                <div class="container">
-                <h1>
-                    Skills
-                </h1>
+                <!------------------------------>       
+                <div class = "row">
+                    <h1>
+                        Skills
+                    </h1>
                     <div class = "col-sm-6 text center">
-                        <p>
-                            Group Organisation and Human Interaction<br/>
-                            Big Autonomy and Adaptability<br/>
-                            High Awareness of technological Innovations<br/>
-                            Smart Design Sensibility</p>
+                        <ul class ="no-bullets">
+                            <li>Group Organisation and Human Interaction</li>
+                            <li>Big Autonomy and Adaptability</li>
+                            <li>High Awareness of technological Innovations</li>
+                            <li>Smart Design Sensibility</li>   
+                        </ul>
                     </div><!--/.col-sm-6--> 
 
-                     <div class = "col-sm-6 text center">
-                        <p>
-                            Strong schedule management<br/>
-                            Versatility of interests and fields of knowledge<br/>
-                            Problem Solving
-                         </p>
-                    </div><!--/.col-sm-6--> 
-                </div><!--!./container-->    
-                <hr/>
+                    <div class = "col-sm-6 text center">
+                        <ul class ="no-bullets">
+                            <li>Strong schedule management</li>
+                            <li>Versatility of interests and fields of knowledge</li>
+                            <li>Problem Solving</li>
+                    </div><!--/.col-sm-6-->  
+                </div>
+                <hr />
 
                 <!------------------------------> 
                 <!-----------Tools-------------->
                 <!------------------------------>
-                <div class="container">
-                <h1>
+                <div class="row" >
+                    <h1>
                     Tools and Programming Languages
-                </h1>
-                
-                    <div class = "col-sm-6 text center">
-                        <p>
-                            Mac OSX         <br/>
-                            LateX           <br/>
-                            Eclipse         <br/>
-                            Subblime Text 2 <br/>
-                            Java 6/7        <br/>
-                            C               <br/>
-                            HTML(5)         
-                        </p>
+                    </h1>
+
+                    <div class = "col-md-6">
+                        <ul class="no-bullets with-effects">
+                            <li>
+                                <span class="ability-title">Mac OSX</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="ability-title">Latex</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="ability-title">Eclipse</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="ability-title">Subblime Text 2</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="ability-title">Java 6/7</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="ability-title">C</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="ability-title">HTML(5)</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class = "col-md-6">
+                        <ul class="no-bullets with-effects">
+                            <li>
+                                <span class="ability-title">MS Office</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="ability-title">Python</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="ability-title">UML</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="ability-title">Photoshop CS6</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="ability-title">Illustrator CC</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="ability-title">XCode</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="ability-title">Github</span>
+                                <span class="ability-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>		
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                    <span class="glyphicon glyphicon-star "></span>
+                                </span>
+                            </li>
+                        </ul>
                     </div> 
-                    <div class = "col-sm-6 text center">
-                        <p>
-                            MS Office           <br/>
-                            Python              <br/>
-                            UML                 <br/>
-                            Photoshop CS6       <br/>
-                            Illustrator CC      <br/>
-                            XCode               <br/>
-                            Github       
-                        </p>
-                    </div> 
-                </div><!--!./container-->    
-            </div><!--/.container-->
+                </div>   
+            </div>
         </div><!--/#abilities-->
 
         <div id="projects" class="page-section">
@@ -386,33 +587,58 @@
 
                 <!------------------------------> 
                 <!---Beginning of Pictures------>
-                <!------------------------------> 
-                <div class="container" style="margin-bottom:50px">
-                    <div class="col-sm-6">
-                        <div id="thumbnails-container" >
-                            <img id ="thumbnails" src="images/IMG_0004.JPG" alt="Picture of my Bicycle in front of the Louvre">
-                        </div><!--/thumbnails-container-->
-                    </div><!--./col-sm-6-->
-
-                    <div class="col-sm-6">
-                        <div id="thumbnails-container" class="column-sm-6">
-                            <img id = "thumbnails" src="images/IMG_0261.jpg" alt="Picture of the Petronas towers in Kuala-Lumpur" >
-                        </div><!--/#thumbnails-container-->
-                    </div><!--./col-sm-6-->
-
-                    <div class="col-sm-6">
-                        <div id="thumbnails-container" class="column-sm-6">
-                            <img id = "thumbnails" src="images/IMG_1494.jpg" alt="Picture of sunset taken from a plane." >
-                        </div><!--/#thumbnails-container-->
-                    </div><!--./col-sm-6-->
-
-                    <div class="col-sm-6">
-                        <div id="thumbnails-container" class="column-sm-6">
-                            <img id = "thumbnails" src="images/final.png" alt="Thumbnail of a poster made for a graphical design course." >
-                        </div><!--/#thumbnails-container-->
-                    </div><!--/.col-sm-6-->  
-                </div><!--/.container-->  
-            </div><!--/.container-->
+                <!------------------------------>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <figure class="effect">
+                            <img src="/images/IMG_0004.jpg" alt="Mals" />
+                            <figcaption>
+                                <h3>Fixed Gear Riding</h3>
+                                <p>The first big items I bought and owned, I’ve been enjoying to ride this bike through Paris and Lausanbe since 2012 as a sport or simply a way of releasing pressure after a long week.</p>   
+                                
+                                 <a class="btn btn-red" href="https://www.strava.com/athletes/2288693" role="button">Link To Strava</a>
+                            </figcaption> 
+                        </figure>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <figure class="effect">
+                            <img src="/images/IMG_0261.jpg" alt="Mals" />
+                            <figcaption>
+                                <h3>Photography - Amateur</h3>
+                                <p>My travels allowed me to start taking pictures arround the glove and more specificaly in Southeast Asia. This was a way for me to keep track of all my experiences and share them.</p>
+                               <a class="btn btn-red" href="http://superhmoreauthings.tumblr.com" role="button">See My Tumblr</a>
+                                <a class="btn btn-red" href=" https://www.instagram.com/hugollin/" role="button">See My Instagram</a>
+                            </figcaption> 
+                        </figure>
+                    </div>
+                    
+                    
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <figure class="effect">
+                            <img src="/images/IMG_1494.jpg" alt="Mals" />
+                            <figcaption>
+                                <h3>Exchange Year In Singapore :</h3>
+                                <p>I spent my entire third year of bachelor in Singapore at Nanyang Technological University. This was a rich expirement, on a human perspective. It allowed me to do multiple travels.</p>
+                                 <a class="btn btn-red" href="https://www.dropbox.com/s/bmhap1cubynwqtq/Rapport%20Echange.pages?dl=0" role="button">See Report</a>
+                            </figcaption> 
+                        </figure>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <figure class="effect">
+                            <img src="/images/final.jpg" alt="Mals" />
+                            <figcaption>
+                                <h3>Graphical Design</h3>
+                                <p>In 2nd year of Bachelor, EPFL offered us to follow a Graphical Design course as a Social and Humanities Science in partnership with ECAL. This allowed me to get a hand on Adobe Illustrator. It also provided me with basics of design.</p> 
+                                <a class="btn btn-red" href="https://www.dropbox.com/s/0llf9qaujjz03tq/printA0%20copy.pdf?dl=0" role="button">See Project</a>
+                                <a class="btn btn-red" href="http://www.ecal.ch/fr/100/homepage" role="button">Link To Ecal</a>
+                                
+                            </figcaption> 
+                        </figure>
+                    </div>
+                 </div>
+            </div>
         </div><!--/#projects-->
 
         <div id="contact" class="page-section">
@@ -422,6 +648,37 @@
                  Now that you learned a bit more about me, it's time to contact me.
                 </div><!--/#subtitle-->
                 <hr/> 
+                <div class="mail-container">
+                    <ul class=no-bullets>
+                        <li><span class = "red">Personal mail :</span> <span class = "mail" ><a href="mailto:moreauhugo@me.com">moreauhugo@me.com</a></span></li>
+                        <li><span class = "red">EPFL mail :</span> <span class = "mail" ><a href="mailto:hugo.moreau@epfl.ch">hugo.moreau@epfl.ch</a></span></li>
+                    </ul>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <a href="https://twitter.com/moreau_hugo">
+                        <img src="images/Twitter.png" alt="Twitter icon" width="70" height="70">
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a href="skype:moreauhugo94?add">
+                            <img src="images/Skype.png" alt="Skype icon" width="70" height="70">
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a href="https://sg.linkedin.com/in/hugo-moreau-9898b6105">
+                            <img src="images/Linkedin.png" alt="LinkedIn icon" width="70" height="70">
+                        </a>
+                    </div>
+                    
+                </div>
+                
+                <div class = "signature">
+                    <p><em>Designed by Hugo Moreau</em></p>
+                </div>
+                
+                
             </div><!--/.container-->    
         </div><!--/#contact-->
 
