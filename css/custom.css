@@ -171,10 +171,11 @@ ul.no-bullets > li{
 /*TYPE OF PAGE SECTIONS*/
 .page-section#presentation {
 	background-position: center;
-    background-image: url(../images/background-pres.jpg);
+    background-image: url(../images/background-pres-small.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;/* Parallax Scrolling Effect */
+    background-color: #e74c3c;
     height: 100%;
     margin:50px 0px 20px 0px; 
 }
@@ -426,6 +427,9 @@ ul.no-bullets > li{
 	.navbar-nav {
 		float: left;
 	}
+    .page-section#presentation {
+        background-image: url(../images/background-pres.jpg);
+}
 }
 @media (max-width: 768px) {
     
@@ -457,11 +461,6 @@ ul.no-bullets > li{
     }
     
     /*Change the background resolution*/
-    .page-section#presentation {
-
-        background-image: url(../images/background-pres-small.jpg);
-}
-    
     .page-section#education h1{
         text-align: left;
     }
@@ -494,8 +493,6 @@ ul.no-bullets > li{
     }
     .page-section#projects figure.effect img {
 	   opacity: 0.2;
-	   -webkit-transform: translate3d(0,0,0);
-	   transform: translate3d(0,0,0);
     }
     .page-section#projects figure.effect .btn{
         display: block;
