@@ -420,6 +420,9 @@ ul.no-bullets > li{
 
 
 @media (min-width: 768px) {
+    .hiddenDesktop{
+        display:none;
+    }
 	.header .navbar-brand {
 		padding-left: 0;
 	}
@@ -428,11 +431,12 @@ ul.no-bullets > li{
 	}
     .page-section#presentation {
         background-image: url(../images/background-pres.jpg);
-        background-attachment: fixed;/* Parallax Scrolling Effect */
 }
 }
 @media (max-width: 768px) {
-    
+    .page-section#projects{
+        display:none;
+    }
     .page-section#education #descriptions{
         display:none;
     }

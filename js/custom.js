@@ -1,3 +1,5 @@
+
+// Smooth scrolling helper
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -11,4 +13,9 @@ $(function() {
       }
     }
   });
+});
+
+//Close the navbar when in collapsed mode once clicked.
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
 });
