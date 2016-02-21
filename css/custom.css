@@ -377,6 +377,9 @@ ul.no-bullets > li{
 .page-section#contact #title{
     color:white;
 }
+.page-section#contact #title{
+    color:#bdc3c7;
+}
 .page-section#contact .mail-container{
     margin: 200px 0px;
     text-align: center;
