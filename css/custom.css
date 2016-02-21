@@ -434,7 +434,7 @@ ul.no-bullets > li{
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
     .page-section#projects .hidden-desktop{
         display:none !important;
     }
@@ -448,21 +448,21 @@ ul.no-bullets > li{
 		float: left;
 	}
     .page-section#presentation {
-        background-image: url(../images/background-pres.jpg);
         background-attachment: fixed;
+        background-image: url(../images/background-pres.jpg);
+    }
 }
-}
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .page-section#projects .hidden-phone{
         display:none !important;
     }
     .page-section#projects .hidden-desktop{
         display:block !important;
     }
+    
     .page-section#education #descriptions{
         display:none;
     }
-    
     h1{
         text-align: center;
     }
