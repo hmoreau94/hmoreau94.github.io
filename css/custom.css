@@ -196,13 +196,18 @@ ul.no-bullets > li{
     color:#ffffff;
     font-size: 25px;
     font-weight: 200;
-    /*I don't understand how to handle the opacity*/
     text-align: center;
 }
 .page-section#presentation img { 
     width: 100%; 
     max-width: 246px; 
     height: auto; 
+}
+.page-section#presentation #clickable{
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
 }
 
 .page-section#about-me{
@@ -368,6 +373,7 @@ ul.no-bullets > li{
     display: block;
 }
 
+
 .page-section#contact{
     background: #6c7A89;
     min-height: 100%;
@@ -413,15 +419,26 @@ ul.no-bullets > li{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-	background: white;s
+	background: white;
 	color: #e74c3c;
     opacity: 0.6;
+}
+.btn-white {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+	background: #e74c3c;
+	color: white;
+    opacity: 0.9;
 }
 
 
 @media (min-width: 768px) {
-    .hiddenDesktop{
-        display:none;
+    .page-section#projects .hidden-desktop{
+        display:none !important;
+    }
+    .page-section#projects .hidden-phone{
+        display:block !important;
     }
 	.header .navbar-brand {
 		padding-left: 0;
@@ -434,8 +451,11 @@ ul.no-bullets > li{
 }
 }
 @media (max-width: 768px) {
-    .page-section#projects{
-        display:none;
+    .page-section#projects .hidden-phone{
+        display:none !important;
+    }
+    .page-section#projects .hidden-desktop{
+        display:block !important;
     }
     .page-section#education #descriptions{
         display:none;
@@ -479,43 +499,6 @@ ul.no-bullets > li{
         display: none;
     }
     
-    /*Unable the effects*/
-    .page-section#projects figure.effect:hover p{
-        display:none;
-    }
-    .page-section#projects figure.effect:hover img{
-        display:none;
-    }
-    .page-section#projects figure.effect:hover h3 {
-	   display:none;
-    }
-    .page-section#projects figure.effect:hover .btn{
-        display:none;
-    }
-    .page-section#projects figure.effect h3::after {
-	   display: none;
-    }
-    .page-section#projects figure.effect h3 {
-	   opacity: 1;
-        position: absolute;
-	   bottom: 0;
-	   left: 0;
-	   width: 100%;
-	   height: 2px;
-	   background: #fff;
-	   content: '';
-    }
-    .page-section#projects figure.effect img {
-	   opacity: 0.2;
-    }
-    .page-section#projects figure.effect .btn{
-        display: block;
-    }
-    
-    /*We delete the hover effect on mobile*/
-    .page-section#projects figure.effect p {
-        display: none;
-    }
     
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #777;
