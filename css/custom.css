@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
     font-family: 'Open Sans', sans-serif;
-    color: #bdc3c7;
+    color: black ;
 }
 html, body{
     height: 100%;
@@ -11,7 +11,6 @@ html, body{
 }
 html, body, h1, h2, h3, p, a, ul {
     font-family: 'Open Sans', sans-serif;
-    color: #bdc3c7;
 }
 .header {
 	position: fixed;
@@ -112,7 +111,7 @@ h3{
     font-weight: 600; 
 }
 p{
-    color: #bdc3c7;
+    color: black;
     font-size: 11pt;
     font-weight: 300; 
 }
@@ -135,7 +134,7 @@ a:active{
     padding-top: 60px; 
 }
 #subtitle{
-    color:#bdc3c7;/* Light Gray */
+    color:#727878;/* Light Gray */
     font-size: 15pt;
     font-weight: 300;
     text-align: center;
@@ -174,7 +173,7 @@ ul.no-bullets > li{
     background-image: url(../images/background-pres-small.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #e74c3c;
+    background-color: rgb(69,68,68);
     height: 100%;
     margin:50px 0px 20px 0px; 
 }
@@ -222,10 +221,8 @@ ul.no-bullets > li{
 
 .page-section#education{
     background: #f2efe0;
-    color: #bdc3c7;
 }
 .page-section#education #descriptions{
-    color: #bdc3c7;
     font-size: 11pt;
     font-weight: 300; 
 }
@@ -263,7 +260,6 @@ ul.no-bullets > li{
     margin-right: auto;
 }
 .page-section#abilities ul.with-effects > li {
-    color: #bdc3c7;
     min-height: 30px; 
     padding: 3px 0px; 
 }
@@ -375,8 +371,11 @@ ul.no-bullets > li{
 
 
 .page-section#contact{
-    background: #6c7A89;
+    background: rgb(69,68,68);
     min-height: 100%;
+}
+.page-section#contact #title{
+    color:white;
 }
 .page-section#contact .mail-container{
     margin: 200px 0px;
@@ -405,8 +404,7 @@ ul.no-bullets > li{
     color:white;
 }
 .page-section#contact a:hover{
-    color:white;
-    text-decoration: underline;
+    color:black;
 }
 
 .btn {
