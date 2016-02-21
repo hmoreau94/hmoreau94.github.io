@@ -183,11 +183,11 @@ ul.no-bullets > li{
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    opacity: 0.76;
+    opacity: 0.86;
 }
 .page-section#presentation #title-up{
     color:#ffffff;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 600;
     text-align: center;
 }
