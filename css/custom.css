@@ -377,7 +377,7 @@ ul.no-bullets > li{
 .page-section#contact #title{
     color:white;
 }
-.page-section#contact #title{
+.page-section#contact #sub-title{
     color:#bdc3c7;
 }
 .page-section#contact .mail-container{
@@ -449,6 +449,7 @@ ul.no-bullets > li{
 	}
     .page-section#presentation {
         background-image: url(../images/background-pres.jpg);
+        background-attachment: fixed;
 }
 }
 @media (max-width: 768px) {
