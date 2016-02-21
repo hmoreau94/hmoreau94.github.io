@@ -121,7 +121,7 @@ a{
 a:hover{
     color:#e74c3c;
     text-decoration: underline;
-}
+} 
 a:active{
     color: white;
     text-decoration: underline;
@@ -203,10 +203,23 @@ ul.no-bullets > li{
     height: auto; 
 }
 .page-section#presentation #clickable{
-    color:#ffffff;
-    font-size: 20px;
-    font-weight: 300;
+    padding-top:100px;
     text-align: center;
+    color: White;
+}
+.page-section#presentation  btn{
+    margin-top: 5px;
+    margin-bottom: 5px;
+	font-weight: 200;
+    max-width: 300px;
+}
+.page-section#presentation btn-down{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+	background: #e74c3c;
+	color: white;
+    opacity: 0.9;
 }
 
 .page-section#about-me{
