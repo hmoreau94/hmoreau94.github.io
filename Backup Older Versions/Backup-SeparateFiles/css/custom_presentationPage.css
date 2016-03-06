@@ -1,0 +1,46 @@
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #6c7A89;
+    background: url(../img/background-pres.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+h1{
+    color:#ffffff;
+    
+    font-size: 40pt;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2{
+    color:#ffffff;
+    font-size: 25pt;
+    font-weight: 300;
+    /*I don't understand how to handle the opacity*/
+    text-align: center;
+}
+
+/*The line under the title*/
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1e;
+    padding: 3;
+}
+
+
+#centered-title{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.76;
+
+}
