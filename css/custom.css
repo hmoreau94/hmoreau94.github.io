@@ -463,8 +463,6 @@ ul.no-bullets > li{
    
 }
 @media (max-width: 720px) {
-    
-    
     .page-section#education .descriptions{
         display:none;
     }
