@@ -381,7 +381,6 @@ ul.no-bullets > li{
 .page-section#contact{
     background: rgb(69,68,68);
     min-height: 100%;
-    padding-bottom: 0;
 }
 .page-section#contact .mail-container{
     margin-top: 70px;

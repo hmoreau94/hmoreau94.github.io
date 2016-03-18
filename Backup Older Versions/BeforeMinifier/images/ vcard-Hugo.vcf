@@ -1,0 +1,11 @@
+BEGIN:VCARD
+N:Moreau;;;Hugo ;Mr.
+ADR;DOM;PARCEL;HOME:;;21 avenue du général leclerc;La Garenne Colombes;Hauts de Seine;92250;France
+EMAIL;INTERNET:moreauhugo@me.com
+EMAIL;INTERNET:hugo.moreau@epfl.ch
+ORG:EPFL
+TEL;WORK:+6597378630
+TEL;CELL:+33628325534
+TITLE:Student
+URL:http://hugomoreau.me
+END:VCARD
